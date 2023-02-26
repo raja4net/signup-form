@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Tilt+Neon&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  background-color: #0f5fc9;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+@media screen and (max-width: 760px) {
+  .container {
+    display: flex;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-image {
+  background-image: url("blue-background.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  height: auto;
+  width: 200px;
+  position: relative;
+}
+
+.bitcoin-img {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-image {
+    display: none;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 760px) {
+  .form-container {
+    align-items: center;
+  }
+}
+.form-body {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+@media (max-width: 760px) {
+  .form-body {
+    width: 100vw;
+  }
+}
+
+label {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  height: 30px;
+  width: 200px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+input:invalid {
+  border: 1px solid red;
+}
+.error {
+  border: 1px solid red;
+}
+.content {
+  font-family: "Tilt Neon";
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px;
+  font-size: 4.5rem;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 4.5rem;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .input,
+  label {
+    font-size: 2rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2 black;
+  height: 40px;
+  padding: 5px;
+  transition: 0.5s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+}
+
+@media (max-width: 760px) {
+  .btn {
+    margin-bottom: 30px;
+  }
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.login {
+  font-size: 2rem;
+  margin: 30px;
+  color: white;
+}
+
+#link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+#link:hover {
+  text-decoration: underline;
+}
