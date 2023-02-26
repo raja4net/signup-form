@@ -1,2 +1,2 @@
 # signup-form
-Signup Form using HTML CSS
+Signup Form using HTML, CSS & JavaScript validation.
